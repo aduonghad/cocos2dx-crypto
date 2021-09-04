@@ -23,23 +23,6 @@ import { AES } from 'crypto-ts';
 const encryptedMessage = AES.encrypt('message', 'test').toString();
 ```
 
-Modular include:
-
-```javascript
-var AES = require("crypto-ts").AES;
-var SHA256 = require("crypto-ts").SHA256;
-...
-console.log(SHA256("Message"));
-```
-
-Including all libraries, for access to extra methods:
-
-```javascript
-var CryptoTS = require("crypto-ts");
-...
-console.log(CryptoTS.HmacSHA1("Message", "Key"));
-```
-
 ### AES Encryption
 
 #### Plain text encryption
