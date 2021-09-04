@@ -12,7 +12,7 @@ Requirements:
 - npm (Node.js package manager)
 
 ```bash
-npm install crypto-ts
+npm install cocos2dx-crypto-ts
 ```
 
 ### Usage
