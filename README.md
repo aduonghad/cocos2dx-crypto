@@ -40,62 +40,6 @@ var CryptoTS = require("crypto-ts");
 console.log(CryptoTS.HmacSHA1("Message", "Key"));
 ```
 
-## Client (browser)
-
-Requirements:
-
-- Node.js
-- Bower (package manager for frontend)
-
-```bash
-bower install crypto-ts
-```
-
-### Usage
-
-Modular include:
-
-```javascript
-require.config({
-    packages: [
-        {
-            name: 'crypto-ts',
-            location: 'path-to/bower_components/crypto-ts',
-            main: 'index'
-        }
-    ]
-});
-
-require(["crypto-ts/algo/aes", "crypto-ts/algo/sha256"], function (AES, SHA256) {
-    console.log(SHA256("Message"));
-});
-```
-
-Including all libraries, for access to extra methods:
-
-```javascript
-// Above-mentioned will work or use this simple form
-require.config({
-    paths: {
-        'crypto-ts': 'path-to/bower_components/crypto-ts/crypto-ts'
-    }
-});
-
-require(["crypto-ts"], function (CryptoTS) {
-    console.log(CryptoTS.MD5("Message"));
-});
-```
-
-### Usage without RequireJS
-
-```html
-<script type="text/javascript" src="path-to/bower_components/crypto-ts/crypto-ts.js"></script>
-<script type="text/javascript">
-    var encrypted = CryptoTS.AES(...);
-    var encrypted = CryptoTS.SHA256(...);
-</script>
-```
-
 ### AES Encryption
 
 #### Plain text encryption
