@@ -1,7 +1,5 @@
 # cocos2dx-crypto-ts
 
-# crypto-ts
-
 Typescript library of crypto standards. Ready for AOT and treeshaking in combination with Angular and other modern typescript frameworks.
 
 ## Node.js (Install)
