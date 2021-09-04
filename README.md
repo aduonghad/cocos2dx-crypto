@@ -17,7 +17,7 @@ npm install cocos2dx-crypto-ts
 
 ES6 import for typical API call signing use case:
 
-```javascript
+```typescript
 import { AES } from 'crypto-ts';
 
 const encryptedMessage = AES.encrypt('message', 'test').toString();
@@ -27,7 +27,7 @@ const encryptedMessage = AES.encrypt('message', 'test').toString();
 
 #### Plain text encryption
 
-```javascript
+```typescript
 var CryptoTS = require("crypto-ts");
 
 // Encrypt
@@ -42,9 +42,7 @@ console.log(plaintext);
 
 #### Object encryption
 
-```javascript
-var CryptoTS = require("crypto-ts");
-
+```typescript
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
