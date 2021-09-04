@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "cocos2dx-crypto",
+  "id": "3d798e6f-484e-4b1e-b9a0-f76825251b88",
+  "version": "2.4.4",
+  "isNew": false
+}
